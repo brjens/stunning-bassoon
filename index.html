@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="15" />
   <title>Brandon Jensen's Resume</title>
   <style>
     body {
@@ -9,23 +9,27 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      display: flex; /* Added to enable sidebar layout */
     }
     header {
       background-color: #333;
       color: #fff;
       padding: 20px;
       text-align: center;
+      width: 20%; /* Set sidebar width */
     }
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
+      display: flex; /* Added to align content with sidebar */
     }
     .main {
       background-color: #fff;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      flex: 1; /* Added to take remaining space beside the sidebar */
     }
     .info {
       display: flex;
@@ -35,17 +39,35 @@
     .info div {
       flex: 1;
     }
+    /* Style for sidebar links */
+    .sidebar {
+      padding: 20px;
+    }
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>My Resume</h1>
+  <header class="sidebar">
+    <!-- Sidebar content with links -->
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="https://github.com/">GitHub</a>
   </header>
 
   <div class="container">
     <div class="main">
-      <h2>About Me</h2>
+	<h2>About Me</h2>
       <p>I'm a Computer Science grad</p>
 
       <h2>Experience</h2>
@@ -75,20 +97,11 @@
           <p>Date</p>
         </div>
       </div>
-      <h2>Skills</h2>
-      <div class="info">
-	<div>
-	<h3>Proficient</h3>
-	<p>Java, Javascript, HTML, CSS</p>
-	<p>CLI, Linx, vim</p>
-	</div>
-	<div>
-	<h3><Familiar</h3>
-	<p>bash, C#, python, SQLlite</p>
-	</div>
-	</div>	      
+      <h2>Skills</h2>:w
+
     </div>
   </div>
 
 </body>
 </html>
+
