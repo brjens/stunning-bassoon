@@ -3,83 +3,18 @@
 <head>
   <meta http-equiv="refresh" content="15" />
   <title>Brandon Jensen's Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      display: flex; /* Added to enable sidebar layout */
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      width: 10%; /* Set sidebar width */
-    }
-    .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-      display: flex; /* Added to align content with sidebar */
-    }
-    .profile {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .profile img {
-      margin-right: 20px;
-      border-radius: 50%; 
-    }
-    .main {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      flex: 1; /* Added to take remaining space beside the sidebar */
-    }
-    .info {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .info div {
-      flex: 1;
-    }
-    /* Style for sidebar links */
-    .sidebar {
-      padding: 20px;
-    }
-    .sidebar a {
-      display: block;
-      margin-bottom: 10px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-  <header class="sidebar">
+  <header id="sidebar" class="sidebar">
     <!-- Sidebar content with links -->
-    <a href="#">Home</a>
-    <a href="schoolProjects.html">School Projects</a>
-    <a href="contact.html" >Contact</a>
-    <a href="https://www.linkedin.com/in/brandon-jensen-6bb8b688/" target="blank">LinkedIn</a>
-    <a href="https://github.com/brjens" target="blank">GitHub</a>
   </header>
 
   <div class="container">
     <div class="main">
  <div class="profile">
-        <img src="https://media.licdn.com/dms/image/D4E35AQG10vI_HcHHzg/profile-framedphoto-shrink_200_200/0/1702493719677?e=1703620800&v=beta&t=tJ5_b8wta6Q47UMBKmZcM2rxAKuUZpBPGwuuyvr45vM" />
+        <img class="profile img"  src="picture1.jpg" />
         <div>
           <h2>About Me</h2>
           <p>Hello, My Name's Brandon, I'm both a poltical science and computer Science grad from York University in Toronto.
@@ -118,7 +53,7 @@
 
     </div>
   </div>
-
+	<script src = "sidebar.js"></script>
 </body>
 </html>
 

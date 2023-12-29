@@ -3,11 +3,13 @@
 just a simple resume webpage to develop and showcase my skills
 
 - nav-links to github, Linkedin
+- github api
+- added old school projects I had laying around
 
 ## Next Feature
 
-- Multiple pages, about and contact information, link to resume download
+- download cv
 
 ## Languages Used
 
-- HTML, CSS`
+- HTML, CSS, JavaScript`
