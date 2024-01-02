@@ -1,18 +1,20 @@
 const sidebar = document.getElementById('sidebar');
-const upPath = '../';
+const currentPage = window.location.pathname.split('/').pop();
 
 // Function to create sidebar links
 function createSidebarLink(linkText, href) {
+  // Construct the relative path based on the relativePath variable
+  const relativePathPrefix = relativePath ? '../' : '';
+  const fullHref = relativePathPrefix + href;
+  console.log(currentPage);
+  console.log(href);
+  // Check if the current page matches the href
+  const isActive = currentPage === href;
 
-  // Check if the HTML file is in a subdirectory
-  // by checking if the path of the current page contains a "/"
-  // if so then add "../" to the href to go up one level
-  if (window.location.pathname.split('/').length > 2) {
-    return `<a href="${upPath}${href}">${linkText}</a>`;
-  }  
-  else {
-    return `<a href="${href}">${linkText}</a>`;
-  }
+  // Add a CSS class to the link if it is the active page
+  const linkClass = isActive ? 'active-link' : '';
+  debugger;
+  return `<a href="${fullHref}" class="${linkClass}">${linkText}</a>`;
 }
 
 // Create sidebar links dynamically
@@ -22,11 +24,3 @@ sidebar.innerHTML =
   createSidebarLink('Contact', 'contact.html') +
   createSidebarLink('LinkedIn', 'https://www.linkedin.com/in/brandon-jensen-6bb8b688/') +
   createSidebarLink('GitHub', 'https://github.com/brjens');
-
-// // sidebar.js
-//   const sidebar = document.getElementById('sidebar');
-//   sidebar.innerHTML = '<a href="index.html">Home</a>' + 
-// 	'<a href="schoolProjects.html">School Projects</a>' +
-// 	'<a href="contact.html" >Contact</a>' +
-// 	'<a href="https://www.linkedin.com/in/brandon-jensen-6bb8b688/" target="blank">LinkedIn</a>' +	
-//         '<a href="https://github.com/brjens" target="blank">GitHub</a>';
