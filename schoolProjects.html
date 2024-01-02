@@ -3,64 +3,12 @@
 <head>
   <meta http-equiv="refresh" content="15" />
   <title>School Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      display: flex; /* Added to enable sidebar layout */
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      width: 10%; /* Set sidebar width */
-    }
-    .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-      display: flex; /* Added to align content with sidebar */
-    } 
-    .main {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      flex: 1; /* Added to take remaining space beside the sidebar */
-    }
-    .info {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .info div {
-      flex: 1;
-    }
-    /* Style for sidebar links */
-    .sidebar {
-      padding: 20px;
-    }
-    .sidebar a {
-      display: block;
-      margin-bottom: 10px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-  </style>
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-  <header class="sidebar">
+  <header id="sidebar" class="sidebar">
     <!-- Sidebar content with links -->
-    <nav id="sidebar"></nav>
   </header>
 
   <div class="container">
@@ -71,7 +19,7 @@
       <h2>Year 1 projects</h2>
       <div class="info">
         <div>
-    <a href="TicTacToe/tictactoe.html">Tic-Tac-Toe</a>
+          <a href="TicTacToe/tictactoe.html">Tic-Tac-Toe</a>
         </div>
       </div>
 
@@ -79,7 +27,9 @@
       </div>
     </div>
   </div>
+
   <script src = "sidebar.js"></script>
+
 </body>
 </html>
 
